@@ -6,6 +6,18 @@
 	<title>smol-BEEG</title>
 	<style type='text/css'>
 
+		.navbar {
+			z-index: 1000;
+			position: fixed;
+			top: 0;
+			left: 0;
+			background-color: white;
+			text-align: left;
+			font-size: 1.25rem;
+			padding: 0.5rem 1rem;
+			
+		}
+
 		body {
 			touch-action: none;
 			margin: 0;
@@ -112,9 +124,14 @@
 			visibility: visible;
 		}
 	</style>
+<link id='-gd-engine-icon' rel='icon' type='image/png' href='smol-beeg.icon.png' />
+<link rel='apple-touch-icon' href='smol-beeg.apple-touch-icon.png'/>
 
 </head>
 <body>
+	<div class="navbar">
+		<a href="/">BACK</a>
+	</div>
 	<canvas id='canvas'>
 		HTML5 canvas appears to be unsupported in the current browser.<br />
 		Please try updating or use a different browser.
@@ -137,7 +154,7 @@
 	<script type='text/javascript' src='smol-beeg.js'></script>
 	<script type='text/javascript'>//<![CDATA[
 
-		const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"executable":"smol-beeg","experimentalVK":false,"fileSizes":{"smol-beeg.pck":3023760,"smol-beeg.wasm":13790961},"focusCanvas":true,"gdnativeLibs":[]};
+		const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"executable":"smol-beeg","experimentalVK":false,"fileSizes":{"smol-beeg.pck":3068368,"smol-beeg.wasm":13790961},"focusCanvas":true,"gdnativeLibs":[]};
 		var engine = new Engine(GODOT_CONFIG);
 
 		(function() {
